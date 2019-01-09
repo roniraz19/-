@@ -1,0 +1,175 @@
+חלק 1:
+שאלה 1:
+static void Main(string[] args)
+		{
+			Console.WriteLine("please ente a number");
+			int x = Convert.ToInt32(Console.ReadLine());
+			mul2(x);
+			Console.WriteLine($"mul 2 of your number is {x}");
+			Console.ReadLine();
+		}
+
+		private static void mul2(int x)
+		{
+			Console.Write("put a num");
+			Console.WriteLine("number is = ");
+מעדיף שלא תבדוק כי לא הצלחתי לסדר את הפונקציה .			
+		}
+שאלה 2:
+static void update(int[]a)
+		{
+			a[0] = 1;
+		}
+		static void Main(string[] args)
+		{
+			int[] a = { 5, 4, -5 };
+			update(a);
+			
+		}
+כן,הערך של האיי ישתנה בגלל שבפונקציה זה מגדיר אותו כאפס מהתחלה ואז במערך זה נותן לו ערכים אחרים
+
+שאלה 3:
+static void update(int[]a)
+		{
+			a = new int[3];
+			a[0] = 1;
+		}
+		static void Main(string[] args)
+		{
+			int[] a = { 5, 4, -5 };
+			update(a);
+			
+		}
+כן,מאחר ואתה מגדיר את האיי בהתחלה כ3 ואז נותן לו את הערך 0 ובמערך נותן לאיי ערכים אחרים . 
+חלק ג : וידוס פורמס
+שאלה 1:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp3
+{
+	public partial class Form1 : Form
+	{
+		public Form1()
+		{
+			InitializeComponent();
+		}
+
+		Random r = new Random();
+		int score = 0;
+
+		private void no9_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
+			Console.WriteLine("please enter number");
+			int number1 = Convert.ToInt32(Console.ReadLine());
+			r.Next(101);
+		}
+
+		private void textBox2_TextChanged(object sender, EventArgs e)
+		{
+			Console.WriteLine("please enter number");
+			int number2 = Convert.ToInt32(Console.ReadLine());
+			r.Next(101);
+		}
+
+		private void textBox3_TextChanged(object sender, EventArgs e)
+		{
+			Console.WriteLine("please enter number");
+			int number3 = Convert.ToInt32(Console.ReadLine());
+			r.Next(101);
+		}
+
+		private void textBox4_TextChanged(object sender, EventArgs e)
+		{
+			Console.WriteLine("please enter number");
+			int number4 = Convert.ToInt32(Console.ReadLine());
+			r.Next(101);
+		}
+		
+
+		private void textBox5_TextChanged(object sender, EventArgs e)
+		{
+			Console.WriteLine("please enter number");
+			int number5 = Convert.ToInt32(Console.ReadLine());
+			r.Next(101);
+		}
+
+		private void startbtm_Click(object sender, EventArgs e)
+		{
+			Console.WriteLine("number");
+		}
+
+		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			int score = 0;
+			if (score>0)
+			{
+				score++;
+			}
+			Console.WriteLine("score is = ");
+
+		}
+
+		private void finishbtm_Click(object sender, EventArgs e)
+		{
+		 if (score<101)
+			{
+				Console.WriteLine("score =");
+			}
+		}
+	}
+}
+זה מה שהצלחתי מבחינת השאלה של הוינדוס פורם.
+שאלה 4:
+בראיון עבודה מספרים לך כי החברה עובדת בדוט נט 2.0
+הנכון זה שהחברה רוצה לקמפל את המוצרים שלה על לינוקס וכידוע מונו יכול לקמפל עד גרסא 2.0. 
+חלק ב: מערכים 
+שאלה 1: 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp25
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			int score = 0;
+			int[] Aarray = { 8, 7, -1, 4 };
+			int[] Barray = { 3, 10, 3 };
+
+			for (int i = 0; i > Aarray.Length; i++)
+			{
+				Console.WriteLine($"Array{i} is bigger");
+				if (Aarray[0] > Barray[0])
+				{
+					score++;
+				}
+			}
+			Console.ReadLine();
+		
+
+		}
+	}
+}
+זה מה שהצלחתי . 
